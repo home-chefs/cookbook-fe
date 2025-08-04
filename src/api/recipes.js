@@ -1,7 +1,7 @@
 import * as requester from './requester';
 
-// const BASE_URL = import.meta.env.VITE_API_URL;
-const BASE_URL = 'http://localhost:8080/recipes';
+const BASE_URL = import.meta.env.VITE_API_URL;
+// const BASE_URL = 'http://localhost:8080/recipes';
 
 export const getAllRecipes = async () => Object.values(await requester.get(BASE_URL));
 
